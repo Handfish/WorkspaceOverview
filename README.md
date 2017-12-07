@@ -23,4 +23,6 @@ I've given myself a crash course on a lot of different topics. Most files are re
 
 #### Useful tool used to write this markdown:
 
- * https://jbt.github.io/markdown-editor/
+ * https://jbt.github.io/markdown-editor
+
+#### *Not the only directory containing code / projects on my laptop.
