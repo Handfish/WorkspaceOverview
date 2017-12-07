@@ -1,0 +1,9 @@
+
+./start-hbase.sh
+
+./stop-hbase.sh 
+./local-regionservers.sh stop 1
+
+
+./hbase-daemon.sh stop rest -p 8000 --infoport 8001
+

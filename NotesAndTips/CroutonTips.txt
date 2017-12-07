@@ -1,0 +1,33 @@
+Crouton and Various Linux Notes
+
+~/.bashrc Contains my environments variables
+~/.vimrc is useful
+~/.config folder has application settings (redshift)
+
+
+Setting up SSH
+https://github.com/dnschneid/crouton/wiki/Running-servers-in-crouton
+
+To enable services through startup of Crouton
+/etc/rc.local
+
+systemd replaces systemctl
+
+  Potentially unneccesary changes made in
+  /etc/hosts.allow
+
+
+Learn what steam games would run on Ubuntu
+http://www.mysteamgauge.com/account?username=76561197980864555
+
+
+http://www.fascinatingcaptain.com/blog/remap-keyboard-keys-for-ubuntu/
+sudo vim /usr/share/X11/xkb/symbols/pc
+ for programming of certain key shortcuts.
+
+sudo apt-get purge
+sudo apt-get autoremove
+
+
+du -sh * | sort -h
+

@@ -1,0 +1,18 @@
+create table ratings (user_id int, movie_id int, rating int, rating_time int) row format delimited fields terminated by '\t';
+LOAD DATA LOCAL INPATH 'file:///home/kenny/Downloads/ml-100k/u.data' OVERWRITE INTO table ratings;
+
+create table movie_names (movie_id int, name string, date string, column4 string) row format delimited fields terminated by '|';
+
+
+
+drop table ratings;
+drop table names;
+
+create table names (movie_id int, name string, Release string, column4 string, column5 int, column6 int, column7 int, column8 int, column9 int, column10 int, column11 int, column12 int, column13 int, column14 int, column15 int, column16 int, column17 int, column18 int, column19 int) row format delimited fields terminated by '|';
+
+create table ratings (user_id int, movie_id int, rating int, rating_time int) row format delimited fields terminated by '\t';
+
+LOAD DATA LOCAL INPATH 'file:///home/kenny/Downloads/ml-100k/u.item' OVERWRITE INTO table names;
+
+LOAD DATA LOCAL INPATH 'file:///home/kenny/Downloads/ml-100k/u.data' OVERWRITE INTO table ratings;
+

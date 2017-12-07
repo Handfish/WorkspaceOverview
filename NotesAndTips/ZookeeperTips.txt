@@ -1,0 +1,11 @@
+/usr/lib/zookeeper/bin/zkServer.sh start zk1.cfg
+/usr/lib/zookeeper/bin/zkServer.sh status zk1.cfg
+
+
+All instances must be running in order to get proper status reports
+echo "1" > /tmp/zookeeper/zk1/myid
+echo "2" > /tmp/zookeeper/zk2/myid
+echo "3" > /tmp/zookeeper/zk3/myid
+
+
+bin/mkdistro.sh -DskipTests -Dhadoopversion=2.8.1

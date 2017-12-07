@@ -1,0 +1,10 @@
+Use 127.0.0.1:3306 instead of localhost
+
+source: https://stackoverflow.com/questions/6865538/solving-a-communications-link-failure-with-jdbc-and-mysql
+
+-------
+
+
+
+sqoop import --connect jdbc:mysql://127.0.0.1:3306/movielens --driver com.mysql.jdbc.Driver --table movies -m 1
+

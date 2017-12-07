@@ -1,0 +1,14 @@
+v $(grep -lr jade)
+
+bufdo -normal @w
+
+25 @q
+
+
+!! Bash Command
+Recursively rename file extension
+find . -name "*.t1" -exec rename 's/\.t1$/.t2/' '{}' \;
+
+
+You can search the current directory with grep as follows:
+$ grep -- foo *

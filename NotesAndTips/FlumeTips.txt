@@ -1,0 +1,8 @@
+
+spark-submit --jars ~/Downloads/spark-streaming-flume-assembly_2.11-2.2.0.jar SparkFlume2.py
+
+flume-ng agent --conf conf --conf-file sparkstreamingflume.conf --name a1 -Dflume.root.logger=INFO,console
+
+
+flume-ng agent --conf conf --conf-file flumelogs.conf --name a1 -Dflume.root.logger=INFO,console
+

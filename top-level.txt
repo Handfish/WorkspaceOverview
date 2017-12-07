@@ -1,0 +1,23 @@
+du -sh * | sort -h
+
+16K	./oozie
+20K	./kafka
+24K	./hive
+36K	./pig
+40K	./es6
+44K	./oldSyslinks
+792K	./.metadata
+2.1M	./python
+4.0M	./sql
+21M	./flume
+29M	./play
+44M	./node
+94M	./scalaSpark
+106M	./cpp
+120M	./akka
+197M	./react
+224M	./eclipse
+238M	./eam
+267M	./spark
+4.4G	./angular4
+5.8G	.

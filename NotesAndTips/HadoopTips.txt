@@ -1,0 +1,48 @@
+Hadoop lives at //usr/local/hadoop/
+
+
+Hadoop required maven to be installed to compile example projects properly.
+
+~/HadoopTutorials/hadoop-book/ is where the github code for Tom White's Hadoop Guide 4th edition is located.
+
+Appendix A in the book has useful information about setup.
+
+There are enviroment variables located in ~/.bashrc concerning hadoop.
+
+Example code to run basic hadoop programs.
+  export HADOOP_CLASSPATH=hadoop-examples.jar
+  hadoop MaxTemperature input/ncdc/sample.txt output
+
+
+
+Hadoop
+Switching from Pseudodistributed Mode to Single Node Mode
+
+
+
+
+
+hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar sort -r 1 -inFormat org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat -outFormat org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat -outKey org.apache.hadoop.io.IntWritable -outValue org.apache.hadoop.io.Text numbers.seq sorted
+
+l
+
+
+Minicluster
+	export HADOOP_CLASSPATH=$HADOOP_HOME/share/hadoop/yarn/test/hadoop-yarn-server-tests-2.8.0-tests.jar 
+	hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.8.0-tests.jar minicluster
+
+
+
+
+sudo cp **/*.jar /usr/lib/oozie//oozie-4.3.0-distro/oozie-4.3.0/libext/
+sudo cp yarn-site.xml /usr/lib/oozie//oozie-4.3.0-distro/oozie-4.3.0/conf/hadoop-conf
+sudo cp mapred-site.xml /usr/lib/oozie//oozie-4.3.0-distro/oozie-4.3.0/conf/hadoop-conf
+
+
+
+
+cp /srv/hadoop-2.7.3/etc/hadoop/yarn-site.xml /srv/oozie-4.3.0/distro/target/oozie-4.3.0-distro/oozie-4.3.0/conf/hadoop-conf
+
+cp /srv/hadoop-2.7.3/etc/hadoop/mapred-site.xml /srv/oozie-4.3.0/distro/target/oozie-4.3.0-distro/oozie-4.3.0/conf/hadoop-conf
+
+

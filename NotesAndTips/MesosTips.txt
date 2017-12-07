@@ -1,0 +1,4 @@
+./bin/mesos-agent.sh --master=127.0.0.1:5050 --work_dir=../../tmp --no-systemd_enable_support
+
+
+./bin/mesos-master.sh --ip=127.0.0.1 --work_dir=/var/lib/mesos  

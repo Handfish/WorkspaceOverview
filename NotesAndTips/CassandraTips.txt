@@ -1,0 +1,9 @@
+Optionally add apache-cassandra-3.6\bin to your path.
+
+Start Cassandra in the foreground by invoking bin/cassandra -f from the command line. Press “Control-C” to stop Cassandra. Start Cassandra in the background by invoking bin/cassandra from the command line. Invoke kill pid or pkill -f CassandraDaemon to stop Cassandra, where pid is the Cassandra process id, which you can find for example by invoking 
+pgrep -f CassandraDaemon
+
+
+Verify that Cassandra is running by invoking bin/nodetool status from the command line.
+Configuration files are located in the conf sub-directory.
+
